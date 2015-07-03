@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+@import url(http://fonts.googleapis.com/css?family=Cookie);
+body {
+    padding: 1em 0;
+}
+
+.madlibs {
+border: 2px solid rgba(245, 14, 14, 0.87);
+  border-radius: 24px;
+}
+
+.header {
+    padding: 5px;
+}
+
+.header h1 {
+    font-family: 'Cookie';
+    color: black;
+    font-weight: 900;
+    text-shadow: 1px 1px rgba(253, 0, 0, 0.58);
+    letter-spacing: 7px;
+    font-size: 64px;
+}
+
+.main {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 40px 0px 40px 50px;
+    text-align: center;
+}
+.main .row{
+ margin-left: 0;
+    margin-right: 0;
+}
+
+input {
+    margin: 5px;
+    padding: 10px;
+}
+
+.content {
+    padding: 30px 20px 20px 30px;
+    font-family: 'Satisfy', cursive;
+    font-size: 2em;
+    letter-spacing: 2px;
+    line-height: 47px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}
+
+.holder {
+    color: #f00;
+    font-weight: 600;
+    text-transform: capitalize;
+}

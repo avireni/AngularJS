@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ngMadLibs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+
+<body ng-controller="madlibsCtrl">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="madlibs col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                <div class="container-fluid header">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-lg-2 col-lg-offset-2">
+                            <img src="assets/mad-lib-happy-face.png" class="img-responsive" alt="Responsive image">
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-lg-8">
+                            <img src="assets/ng-mad-libs-logo.png" class="img-responsive" alt="Responsive image">
+                            <h1>Automate This!</h1>
+                        </div>
+                    </div>
+                </div> <!-- Header -->
+                <div class="container-fluid main">
+                    <div class="row">
+                        <input type="text" id="yourName" placeholder="Name" ng-model="name">
+                        <input type="text" id="jobtitle" placeholder="Job Title" ng-model="jobtitle">
+                        <input type="text" id="tedioustask" placeholder="Tedious task" ng-model="tedioustask" value="Tedious task">
+                    </div>
+                    <div class="row">
+                        <input type="text" id="dirtytask" placeholder="Dirty Task" ng-model="dirtytask">
+                        <input type="text" id="celebrity" placeholder="Celebrity" ng-model="celebrity">
+                        <input type="text" id="useless" placeholder="Useless skill" ng-model="useless">
+                    </div>
+                    <div class="row">
+                        <input type="text" id="obcelebrity" placeholder="Obnoxious Celebrity" ng-model="obcelebrity">
+                        <input type="text" id="task" placeholder="Huge number" ng-model="number">
+                        <input type="text" id="adjective" placeholder="Adjective" ng-model="adjective">
+                    </div>
+                </div> <!-- Main -->
+
+                   <div class="container-fluid content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <span class="holder">{{name}}</span> was a <span class="holder">{{jobtitle}}</span> who loved technology. Although she loved parts of her job, she absolutely hated <span class="holder">{{tedioustask}}</span> and <span class="holder">{{dirtytask}}</span>. So, <span class="holder">{{name}}</span> met with her life mentor <span class="holder">{{celebrity}}</span> who told her to learn how to <span class="holder">{{useless}}</span> with Thinkful. Thinkful didn't offer a course on <span class="holder">{{useless}}</span> so she studied programming instead. What a great decision! With her new skills, <span class="holder">{{name}}</span> built a(n) <span class="holder">{{adjective}}</span> robot named <span class="holder">{{obcelebrity}}</span> that not only loved <span class="holder">{{dirtytask}}</span> but did it <span class="holder">{{number}}</span> faster.</div>
+            </div>
+        </div> <!-- Content -->
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
