@@ -6,7 +6,7 @@ angular.module("myApp", [])
     $scope.dirtytask= "Dirty task";
     $scope.celebrity= "Celebrity";
     $scope.useless= "Useless";
-    $scope.obcelebrity= "Ob celebrity";
+    $scope.obcelebrity= "Obnoxious celebrity";
     $scope.number= "Number";
     $scope.adjective= "Adjective";
 });
