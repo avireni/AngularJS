@@ -25,8 +25,17 @@
                             <h1>Automate This!</h1>
                         </div>
                     </div>
-                </div> <!-- Header -->
+                </div>
+                <!-- Header -->
                 <div class="container-fluid main">
+                    <div class="row gender">
+                        <label class="radio-inline" ng-click="display='female'">
+                            <input type="radio" name="optGender" checked>Female</label>
+                        <label class="radio-inline" ng-click="display='male'">
+                            <input type="radio" name="optGender">Male
+                        </label>
+                    </div>
+
                     <div class="row">
                         <input type="text" id="yourName" placeholder="Name" ng-model="name" autofocus>
                         <input type="text" id="jobtitle" placeholder="Job Title" ng-model="jobtitle">
@@ -42,16 +51,21 @@
                         <input type="text" id="task" placeholder="Huge number" ng-model="number">
                         <input type="text" id="adjective" placeholder="Adjective" ng-model="adjective">
                     </div>
-                </div> <!-- Main -->
+                </div>
+                <!-- Main -->
 
-                   <div class="container-fluid content">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12">
-                    <span class="holder">{{name}}</span> was a <span class="holder">{{jobtitle}}</span> who loved technology. Although she loved parts of her job, she absolutely hated <span class="holder">{{tedioustask}}</span> and <span class="holder">{{dirtytask}}</span>. So, <span class="holder">{{name}}</span> met with her life mentor <span class="holder">{{celebrity}}</span> who told her to learn how to <span class="holder">{{useless}}</span> with Thinkful. Thinkful didn't offer a course on <span class="holder">{{useless}}</span> so she studied programming instead. What a great decision! With her new skills, <span class="holder">{{name}}</span> built a(n) <span class="holder">{{adjective}}</span> robot named <span class="holder">{{obcelebrity}}</span> that not only loved <span class="holder">{{dirtytask}}</span> but did it <span class="holder">{{number}}</span> faster.</div>
+                <div class="container-fluid content">
+                    <div class="row" ng-switch="display">
+                        <div class="col-xs-12 col-sm-12" ng-switch-default="female">
+                            <span class="holder">{{name}}</span> was a <span class="holder">{{jobtitle}}</span> who loved technology. Although she loved parts of her job, she absolutely hated <span class="holder">{{tedioustask}}</span> and <span class="holder">{{dirtytask}}</span>. So, <span class="holder">{{name}}</span> met with her life mentor <span class="holder">{{celebrity}}</span> who told her to learn how to <span class="holder">{{useless}}</span> with Thinkful. Thinkful didn't offer a course on <span class="holder">{{useless}}</span> so she studied programming instead. What a great decision! With her new skills, <span class="holder">{{name}}</span> built a(n) <span class="holder">{{adjective}}</span> robot named <span class="holder">{{obcelebrity}}</span> that not only loved <span class="holder">{{dirtytask}}</span> but did it <span class="holder">{{number}}</span> faster.</div>
+                        <div class="col-xs-12 col-sm-12" ng-switch-when="male">
+                            <span class="holder">{{name}}</span> was a <span class="holder">{{jobtitle}}</span> who loved technology. Although he loved parts of his job, he absolutely hated <span class="holder">{{tedioustask}}</span> and <span class="holder">{{dirtytask}}</span>. So, <span class="holder">{{name}}</span> met with his life mentor <span class="holder">{{celebrity}}</span> who told him to learn how to <span class="holder">{{useless}}</span> with Thinkful. Thinkful didn't offer a course on <span class="holder">{{useless}}</span> so he studied programming instead. What a great decision! With his new skills, <span class="holder">{{name}}</span> built a(n) <span class="holder">{{adjective}}</span> robot named <span class="holder">{{obcelebrity}}</span> that not only loved <span class="holder">{{dirtytask}}</span> but did it <span class="holder">{{number}}</span> faster.</div>
+                    </div>
+                </div>
+                <!-- Content -->
             </div>
-        </div> <!-- Content -->
-        </div> <!-- Madlibs -->
-    </div>
+            <!-- Madlibs -->
+        </div>
     </div>
 </body>
 
