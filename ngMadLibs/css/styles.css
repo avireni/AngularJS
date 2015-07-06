@@ -25,7 +25,8 @@ body {
 
 .main {
     border-top: 1px solid;
-    border-bottom: 1px solid;
+    /*    border-bottom: 1px solid;*/
+    
     padding: 40px 0px 40px 50px;
     text-align: center;
 }
@@ -65,4 +66,14 @@ input {
     color: #f00;
     font-weight: 600;
     text-transform: capitalize;
+}
+
+.error {
+    color: #f00;
+    display: block;
+}
+
+#startOver {
+    font-family: Helvetica;
+    font-size: 25px;
 }
