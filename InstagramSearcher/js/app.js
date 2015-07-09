@@ -18,7 +18,7 @@ angular.module("instaSearch", [])
 				$scope.submitForm = true;
 				var config = {
 					'params': {
-						client_id: 'df1be7028ee843dcb68036adc5bfc557c',
+						client_id: 'df1be7028ee843dcb68036adc5bfc557',
 						callback: 'JSON_CALLBACK'
 					}
 				}
