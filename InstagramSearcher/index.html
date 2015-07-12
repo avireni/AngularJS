@@ -44,15 +44,18 @@
 		<!-- row -->
 
 		<div class="row">
-			<div class="msg" ng-if="resultCount" class="col-md-4 col-md-offset-4">
-				<h4>We found <span>{{resultCount}}</span> results for <span>{{searchQuery}}</span></h4>
+
+			<div class="msg" ng-if="myForm.$valid && !hasError" class="col-md-4 col-md-offset-4">
+				<h4>{{message}}</span></h4>
 			</div>
 			<div class="msg" ng-if="myForm.$submitted && myForm.searchField.$error.required" class="col-md-4 col-md-offset-4">
 				<h4>Please enter a search term</h4>
 			</div>
-			<div class="msg" ng-if="submitForm && !resultCount" class="col-md-4 col-md-offset-4">
-				<h4>Instagram Server fails to respond to the request..</h4>
+
+			<div class="msg" ng-if="hasError" class="col-md-4 col-md-offset-4">
+				<h4>{{message}}</h4>
 			</div>
+
 		</div>
 		<!-- row -->
 
