@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+body {
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 1px;
+}
+
+.page-header {
+	text-align: center;
+	color: rgb(91, 192, 222);
+	text-shadow: 1px 1px rgb(6, 112, 144);
+}
+
+nav {
+	text-align: center;
+}
+
+ul {
+	padding-left: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	padding: 0px 10px;
+	border-right: 1px solid #C5BFBF;
+}
+
+.main {
+	margin-top: 40px;
+}
+
+.home {
+	text-align: justify;
+	line-height: 33px;
+}
+
+.input-group .inputBox {
+	width: 70%;
+}
+
+form {
+	padding: 15px 0;
+}
+
+.form-horizontal .form-group {
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+.customBtn {
+	margin-right: 5px;
+	padding: 8px 15px;
+}

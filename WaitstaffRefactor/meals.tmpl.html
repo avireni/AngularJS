@@ -1,0 +1,60 @@
+<div ng-controller="MealsCtrl">
+	<div class="panel panel-warning">
+		<div class="panel-heading">
+			<h3 class="panel-title">Enter the Meal Details</h3>
+		</div>
+		<div class="panel-body">
+			<form name="myForm" class="form-horizontal" ng-submit="submit()">
+				<div class="form-group">
+					<label for="price" class="col-sm-4 control-label">Base Meal Price</label>
+					<div class="input-group" class="col-sm-4">
+						<span class="input-group-addon">$</span>
+						<input type="number" name="price" class="form-control inputBox" ng-model="data.base" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="tax" class="col-sm-4 control-label">Tax Rate</label>
+					<div class="input-group" class="col-sm-4">
+						<span class="input-group-addon">%</span>
+						<input type="number" name="tax" class="form-control inputBox" ng-model="data.tax" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="tip" class="col-sm-4 control-label">Tip Percentage</label>
+					<div class="input-group" class="col-sm-4">
+						<span class="input-group-addon">%</span>
+						<input type="number" name="tip" class="form-control inputBox" ng-model="data.tip" required>
+					</div>
+				</div>
+				<div class="col-sm-offset-4">
+					<input type="submit" value="submit" class="btn btn-info customBtn">
+					<input type="button" value="cancel" class="btn btn-info customBtn" ng-click="cancel()">
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<div>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">Customer Charges</h3>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-sm-4">Subtotal</div>
+				<div class="col-sm-4">{{total.subtotal | currency}}</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">Tip</div>
+				<div class="col-sm-4">{{total.tip | currency}}</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">Total</div>
+				<div class="col-sm-4">{{total.total | currency}}</div>
+			</div>
+		</div>
+
+	</div>
+</div>
