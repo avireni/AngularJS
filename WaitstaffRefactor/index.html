@@ -9,10 +9,11 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="bower_components/angular/angular.js" type="text/javascript"></script>
 	<script src="bower_components/angular-route/angular-route.js" type="text/javascript"></script>
+	<script src="bower_components/angular-animate/angular-animate.js" type="text/javascript"></script>
 	<script src="js/app.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body ng-class="{loading: isLoading}">
 	<div class="container" ng-controller="MainCtrl">
 
 		<div class="page-header">
@@ -29,7 +30,10 @@
 			</ul>
 
 		</nav>
-		<div class="col-md-6 col-md-offset-3 main" ng-view></div>
+		<div class="animate-view-container">
+			<div class="col-md-6 col-md-offset-3 animate-view main" ng-view></div>
+		</div>
+
 
 	</div>
 </body>
