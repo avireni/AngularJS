@@ -33,7 +33,8 @@ angular.module("myApp", ['ngRoute', 'ngAnimate'])
 			template: '<p> Error - Page not found </p>'
 		});
 	})
-	.controller('HomeCtrl', function ($scope, $rootScope) {}).controller('MealsCtrl', function ($scope, $rootScope) {
+	.controller('HomeCtrl', function ($scope, $rootScope) {})
+	.controller('MealsCtrl', function ($scope, $rootScope) {
 		$scope.submit = function () {
 			if ($scope.myForm.$valid) {
 				$rootScope.total.subtotal = (($rootScope.data.tax / 100) * $rootScope.data.base) + $rootScope.data.base;
